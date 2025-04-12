@@ -20,6 +20,10 @@ const LandingPage = () => {
     navigate('/login');
   }
 
+  const handleSignUp = () => {
+    navigate('/register');
+  }
+
   return (
     <Box sx={{ minHeight: '100vh', bgcolor: '#f9fafb' }}>
       {/* Modern App Bar */}
@@ -182,6 +186,7 @@ const LandingPage = () => {
             fontSize: '1.1rem',
             fontWeight: 'bold'
           }}
+          onClick={handleSignUp}
         >
           Create Free Account
         </Button>
